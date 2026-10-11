@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+class Rectangle {
+public:
+    float length, breadth;
+    void area();
+};
+
+void Rectangle::area() {
+    cout << "Area = " << length * breadth;
+}
+
+int main() {
+    Rectangle r;
+    cout << "Enter Length and Breadth: ";
+    cin >> r.length >> r.breadth;
+    r.area();
+    return 0;
+}
