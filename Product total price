@@ -1,0 +1,31 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+class Product {
+public:
+    int productID;
+    string name;
+    int quantity;
+    float price;
+
+    void calculateTotal() {
+        cout << "Enter Product ID: ";
+        cin >> productID;
+        cout << "Enter Product Name: ";
+        cin >> name;
+        cout << "Enter Quantity: ";
+        cin >> quantity;
+        cout << "Enter Price per item: ";
+        cin >> price;
+
+        float totalPrice = quantity * price;
+        cout << "\nTotal Price for " << name << ": " << totalPrice << endl;
+    }
+};
+
+int main() {
+    Product p;
+    p.calculateTotal();
+    return 0;
+}
